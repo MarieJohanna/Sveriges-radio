@@ -19,11 +19,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="Station">
-        {this.state.radioStation.map((item) => {
-          return <Station
-            name={item.name} />
-        })}
+      <div className="page">
+        <h1>Sverige Radio - Alla stationer</h1>
+        <div className="Stations">
+          {this.state.radioStation.map((item) => {
+            return <Station
+              name={item.name}
+              tagline={item.tagline}
+              color={item.color}
+              image={item.image}
+              audio={item.liveaudio.url} />
+          })}
+        </div>
       </div>
     )
   }
