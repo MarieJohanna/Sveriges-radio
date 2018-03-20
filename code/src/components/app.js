@@ -35,6 +35,7 @@ class App extends React.Component {
     return (
       <div className="page">
         <h1>Sverige Radio</h1>
+        <h4>Lyssna direkt på Sveriges Radio</h4>
         <div>
           <select className="scrollDown" onChange={this.filterChannel}>
             <option className="channel">Välj kanal...</option>
