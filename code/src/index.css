@@ -10,9 +10,19 @@ body {
 .page {
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.Stations {
+.scrollDown {
+  margin: 2%;
+  width: 200px;
+  height: 30px;
+  background-color: white;
+}
+
+.stations {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
