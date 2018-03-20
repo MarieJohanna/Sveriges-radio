@@ -12,7 +12,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://api.sr.se/api/v2/channels?format=json&size=100").then((response) => {
+    fetch("https://api.sr.se/api/v2/channels?format=json&size=100").then((response) => {
       return response.json()
     }).then((json) => {
       this.setState({ radioStation: json.channels })
